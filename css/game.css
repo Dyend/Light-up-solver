@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gif{
+    height: 200px;
+    width: 400px;
+    background-image: url('../img/Rick_Morty.gif');
+    background-size: cover;
+}
+
+.tablero{
+    width: 364px;
+    height: 364px;								
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.tablero > div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    float: left;			
+    font-size: 30;	
+    text-align: center;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.black_square{
+    background-color: black;
+    color: white;
+}
+
+.white_square{
+    background-color: white;
+}
+.X{
+    color: red;
+    background-color: white;
+}
+.XI{
+    background-color: yellow;
+    color: red;
+}
+.lampara{
+    background-image: url("../img/light.jpg");
+}
+
+.luz{
+    background-color: yellow;
+}
+.botones_tableros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    margin-left: 10px;
+    padding:10px 20px;
+    background-color: #e69900;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+button:hover{
+    background-color: white;
+    border: 1px solid #e69900;
+    color: #e69900;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+input{
+    padding:10px 20px;
+    background-color: #e69900;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    outline: none;
+
+}
+
+::-webkit-file-upload-button {
+    background: white;
+    color: #e69900;
+    border: 1px solid #e69900;
+    outline: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+	<head>
+        <meta charste="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/game.css">
+	</head>
+    <body>
+
+        <div class="gif"></div>
+        <h1>Light up solver</h1>
+        <input type="file" id="file-selector">
+        <div id="tablerominas" class="tablero"></div>
+        <div class="botones_tablero">
+          <button onclick = "next_move()" >Next move</button>
+        </div>
+        
+    </body>
+    <script>
+        const fileSelector = document.getElementById('file-selector');
+        fileSelector.addEventListener('change', (event) => {
+          const fileList = event.target.files;
+          var file = fileList[0];
+          var reader = new FileReader();
+          reader.onload = (function(reader)
+          {
+              return function()
+              {
+                  var contents = reader.result;
+                  var lines = contents.split('\n');
+                  //////
+                  cargarTablero(contents);
+              }
+          })(reader);
+
+          reader.readAsText(file);
+        });
+      </script>
+    <script src="js/game.js"></script>
+	
+</html>

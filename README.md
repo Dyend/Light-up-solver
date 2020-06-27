@@ -7,13 +7,13 @@ tarea de IA
 - Diego Acosta Muñoz
 
 
-instrucciones:  
+Instrucciones:  
 
     abrir el html con un browser y usar alguno de los samples o agregar uno.  
 
 
 
-formato del archivo:  
+Formato del archivo:  
 
     - => cuadrado blanco  
 
